@@ -1,0 +1,2 @@
+.likes{transform: scale(1); transition: all .15s ease-in;}
+    .likes:hover{cursor: pointer; color:var(--blue); transform: scale(1.1); transition: all .15s ease-in;}
