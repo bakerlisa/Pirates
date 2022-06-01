@@ -6,3 +6,6 @@ People, this is a feat for the Gods! Literally create a fullstack fully fuctioni
 
 
 PS I got top scores for it! To get this I had to teach myself a lot of outside work and do additional work on the exam with the same amount of time. 
+
+
+*** Pictures are coming! ****
