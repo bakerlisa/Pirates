@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import Pirate from '../components/Pirate';
 
@@ -18,10 +19,8 @@ const Home = (props) => {
 
     return(
         <>
+            <Banner title="Current Captain Roster" subtitle="Pirate Port: Tortuga" page="homebanner" />
             <div>
-
-                <h1>Pirates</h1>
-                <Link to="/createPirate" className="button-lg">Add a Pirate</Link>
                 <div className="allPirates">
                     {
                         gfg.map((item,i) => {

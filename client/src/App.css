@@ -40,6 +40,8 @@ p,li,a{font-family: 'Source Sans Pro', sans-serif;}
 
   /* BANNER  */
   .editbanner{background-image: url('./img/ship01.jpg');}
+  .homebanner{background-image: url('./img/pirates.jpg');}
+  .homebanner:before{background-color: rgba(0,0,0,.25) !important;}
 
   /* CONTAINER */
 .container{max-width: 1200px; margin: 0 auto;}
@@ -67,6 +69,6 @@ form .submit:hover{cursor: pointer; opacity: .75;}
   .errWrp{ color:var(--red);}
   .errWrp h4{margin:0 ;}
 /* NAV */
-nav{text-align: right; padding: 25px 50px; background-color:transparent; position: absolute; top: 0; left: 0;width: 100%;}
+nav{text-align: right; padding: 25px 50px; background-color:transparent; position: absolute; top: 0; left: 0;width: 100%; z-index: 100;}
 nav a,nav > div{color:var(--white); padding: 0 10px; text-decoration: none; font-weight: 600; display: inline;}
 nav a:hover, nav > div:hover{cursor: pointer; color:var(--white);}
