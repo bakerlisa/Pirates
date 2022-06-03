@@ -40,6 +40,7 @@ const SinglePirate = (props) => {
     return(
         <>
             <Banner page="singlepirate" subtitle={`Aboard the ${pirate.ship}`} title={`${pirate.name}`} />
+            <div className="texture"></div>
             <div className="container">
                 <div className={styled.singlePirate}>
                     <div className="col-2">
@@ -49,6 +50,16 @@ const SinglePirate = (props) => {
 
                     <div className="col-2">
                         <h2> { pirate.crew === "captain" ?    "Captain" : `${ pirate.crew}`  } of the {pirate.ship}</h2>
+                        <div className={styled.jollyroger}>
+                            {
+                                pirate.jollyroger.length > 0 ? <img src={pirate.jollyroger}  alt={`${pirate.ship} Jolly Roger`} /> : ""
+                            }
+                            
+                            {
+                                pirate.jollyrogertwo.length > 0 ? <img src={pirate.jollyrogertwo}  alt={`${pirate.ship} Jolly Roger`} /> : ""
+                            }
+                                
+                        </div>
                         <p class={styled.favorite}><strong>Vote as Your Favorite Pirate: </strong> {pirate.likes} </p>
                         <p><strong>Ships Taken: </strong>{pirate.treasure}</p>
                         <p><strong>You'll know him by: </strong></p>
@@ -64,6 +75,7 @@ const SinglePirate = (props) => {
                 <div className="aboutWrp">
                     <h2>About</h2>
                     <p>{pirate.about}</p>
+                    <a href={pirate.more} target="_blank" className={styled.more}>Read More</a>
                 </div>
 
                 <div className={styled.crewWrp}>
@@ -78,9 +90,8 @@ const SinglePirate = (props) => {
                             })
                         }
                         </ul>
+                        <Link className={styled.edit} to={`/editPirate/${id}`}>Edit</Link>
                 </div>
-
-                <Link className="edit" to={`/editPirate/${id}`}>Edit</Link>
             </div>
         </>
     )

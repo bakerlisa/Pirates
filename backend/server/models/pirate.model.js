@@ -15,6 +15,9 @@ const PirateSchema = new mongoose.Schema({
         minlength: [3, "Crew needs to be at least 3 characters"],
         required: [true, "Crew is required"]
     },
+    more: {
+        type: String
+    },
     ship:{
         type: String,
         default: "HA! Scooner"
@@ -26,6 +29,14 @@ const PirateSchema = new mongoose.Schema({
     shipImage:{
         type: String,
         default: 0
+    },
+    jollyroger:{
+        type: String,
+        default: ""
+    },
+    jollyrogertwo:{
+        type: String,
+        default: ""
     },
     phrase: {
         type: String,

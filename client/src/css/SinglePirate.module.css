@@ -1,16 +1,21 @@
-.singlePirate{padding-bottom: 50px; display: flex;align-items: start;justify-content: start;flex-wrap: wrap;}
+.singlePirate{ display: flex;align-items: start;justify-content: start;flex-wrap: wrap; }
 .singlePirate h2{text-align: left; margin: 0;}
 .singlePirate  p{text-align: left; font-family: 'Source Sans Pro', sans-serif;}
 .singlePirate img{display: block;max-width: 100%;}
+.singlePirate .jollyroger{max-width: 100px; display: block; padding-top: 10px;}
 .about p{text-align: left;}
+
 
 /* crewWrp */
 .crewWrp{display: flex;align-items: start;justify-content: start;flex-wrap: wrap;}
 .crewWrp h2{width: 100%;}
 .crewWrp .imageWrap{width: 50%; padding-right: 25px;}
 .crewWrp .imageWrap img{display: block;max-width: 100%;}
-.crewWrp ul{width: 50%; padding-left: 25px;}
+.crewWrp ul{width: 50%; padding-left: 25px; margin: 0;}
+.crewWrp li{list-style-type: none; font-size: 20px; padding-bottom: 10px;}
 .vote strong{color:var(--green);}
 .vote:hover{cursor: pointer; color:var(--dk_gray);}
 
+.crewWrp .edit, .more{text-align: right; margin-left:auto; display: block; color:var(--black); text-decoration: none; font-size: 18px;    text-transform: uppercase; font-weight: 900;padding-top: 50px;}
+    .crewWrp .edit:hover, .more:hover{color:var(--red); cursor: pointer;}
 

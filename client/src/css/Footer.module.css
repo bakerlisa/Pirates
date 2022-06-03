@@ -1,2 +1,2 @@
-.footer{margin-top: 50px; }
-.footer p{color:var(--white);}
+.footer{margin-top: 50px; position: relative;z-index: 10;}
+.footer p{color:var(--white); text-align: center;}

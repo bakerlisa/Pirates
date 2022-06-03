@@ -22,10 +22,12 @@ GLOBAL STYLES
 
 h1{font-size: 65px;}
 
-*{box-sizing: border-box; font-family: 'Nuosu SIL', serif;}
-p,li,a{font-family: 'Source Sans Pro', sans-serif; text-align: left;}
+*{box-sizing: border-box; }
+p,li,a{font-family: 'Source Sans Pro', sans-serif; text-align: left; line-height: 28px; font-size: 16px;}
 
-h2{font-size: 50px; text-align: left;}
+h1{font-family: 'Nuosu SIL', serif;}
+h2{font-size: 50px; text-align: left;font-family: 'Nuosu SIL', serif;}
+h3{font-family: 'Nuosu SIL', serif;}
 
 .App {text-align: center;}
 
@@ -48,7 +50,10 @@ h2{font-size: 50px; text-align: left;}
   .homebanner:before, .singlepirate:before{background-color: rgba(0,0,0,.25) !important;}
 
   /* CONTAINER */
-.container{max-width: 1200px; margin: 0 auto; padding: 50px;}
+  .App{position: relative;}
+.container{max-width: 1200px; margin: 0 auto; padding: 50px; position: relative;}
+
+.texture{background-image: url('./img/lines.png'); background-size: cover; background-repeat: no-repeat; background-position: bottom; position: absolute; bottom: 0;left: 0;right: 0;height: 1200px; width: 100%; opacity: .07;}
 
 /* COLUMN */
 .col-2{width: 50%;}

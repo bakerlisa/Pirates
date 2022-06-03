@@ -111,6 +111,15 @@ const Form = props => {
                 </div>
 
                 <div>
+                    <label htmlFor="jollyroger">Jolly Roger: </label>
+                    <input type="text"  name="jollyroger" value={props.form.jollyroger} placeholder="Ships Jolly Roger..." onChange={onChangeHandler} />
+                </div>
+                <div>
+                    <label htmlFor="jollyrogertwo">Jolly Roger Two: </label>
+                    <input type="text"  name="jollyrogertwo" value={props.form.jollyrogertwo} placeholder="Second Jolly Roger..." onChange={onChangeHandler} />
+                </div>
+
+                <div>
                     <label htmlFor="phrase">Phrase: </label>
                     <input type="text" name="phrase" value={props.form.phrase}  onChange={onChangeHandler} placeholder="Phrase..." />
                 </div>
@@ -129,6 +138,11 @@ const Form = props => {
                     <label htmlFor="attributes">Attributes: </label>
                     <input type="text" name="attributes" value={props.form.attributes}  onChange={onChangeHandler} placeholder="Comma seperated list" onBlur={onFocusOutHandler}/>
                 </div> 
+
+                <div>
+                    <label htmlFor="more">Read More: </label>
+                    <input type="text" name="more" value={props.form.more}  onChange={onChangeHandler} placeholder="More About..." />
+                </div>
                 <h3>Typical Pirate Traits:</h3>
                 <div className="typical"> 
                     <div>
