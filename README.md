@@ -1,11 +1,12 @@
-# MERN-Deployment
+# Pirates
 
-🥋 🏆 5 hour exam Full Crud exam
+People, this is a feat for the Gods! Literally trying to create a fullstack fully fuctioning project in 5 hours....Wow. Try it sometime. Its HARD! But I'm a badass and I got it done! 
 
-People, this is a feat for the Gods! Literally create a fullstack fully fuctioning project in 5 hours....Wow. Try it sometime. Its HARD! But I'm a badass and I got it done! And I may not have had enough tome to make it prestty, but take a look at the code B-E-A-U-T-I-F-U-L!!! 
+The only un-Godly thing I didn't get done in that amout of time was styling. I could cheat and use a CSS library, but where the fun in that. That and I love to style stuff. CSS is EASY! So I'm gonna take a few hours at some point and make this puppy B-E-A-U-T-I-F-U-L!!! 
 
-
-PS I got top scores for it! To get this I had to teach myself a lot of outside work and do additional work on the exam with the same amount of time. 
+Top Accomplishments:
+1. Database creation, ERD, and setup
+2. 
 
 
 *** Pictures are coming! ****
