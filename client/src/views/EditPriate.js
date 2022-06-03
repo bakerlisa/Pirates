@@ -11,6 +11,7 @@ const EditPriate = (props) => {
     const history = useHistory();
     const { id } = useParams();
     const [form,setForm] = useState({})
+    const [mates,steMates] = useState([])
 
     const [dbError,setDBError] = useState({ })
     const [error,setError] = useState({
@@ -21,6 +22,7 @@ const EditPriate = (props) => {
     useEffect(() => {
         axios.get(`http://localhost:8000/api/pirate/${id}`).then(response=>{
             setForm(response.data.pirate);
+            steMates([response.data.pirate.mates])
         })
         .catch(err => {
             history.push("/404");
@@ -42,9 +44,10 @@ const EditPriate = (props) => {
 
     return(
         <>
-        <Banner title={form.name} page="editbanner" member={form.crew} subtitle="Edit" />
+            <Banner title={form.name} page="editbanner" member={form.crew} subtitle="Edit" />
             <div>
-                <Form  title={`Edit Pirate: ${form.name}`} form={form} setForm={setForm} onSubmitHandler={onSubmitHandler} dbError={dbError} error={error} setError={setError} />
+
+                <Form  title={`Edit Pirate: ${form.name}`} form={form} setForm={setForm} onSubmitHandler={onSubmitHandler} dbError={dbError} error={error} setError={setError} mates={mates}/>
                 <Link to="/pirates" className="cancle">Cancle</Link>
                 <Delete id={id} />
             </div>

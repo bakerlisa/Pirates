@@ -1,7 +1,7 @@
 import { Switch,Route,Link,Redirect, useHistory } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
-import Banner from './components/Banner';
+import Footer from './components/Footer';
 import AddPirate from './views/AddPirate';
 import EditPriate from './views/EditPriate';
 import Error from './views/Error';
@@ -25,6 +25,7 @@ function App() {
         <Route exact path="/pirates">
           <Navigation />
           <Home />
+          <Footer />
         </Route>
 
         <Route exact path="/createPirate">

@@ -8,12 +8,14 @@ const SinglePirate = (props) => {
     const { id } = useParams();
     const [pirate,setPirate] = useState([])
     const [newCount, setNewCount] = useState({})
+    const [crew,setCrew] = useState([props.mates])
     const [attr,setAttr] = useState([])
     
     useEffect(() => {
         axios.get(`http://localhost:8000/api/pirate/${id}`).then(response=>{
             setPirate(response.data.pirate);
-            setAttr(response.data.pirate.attributes)
+            setAttr(response.data.pirate.attributes);
+            setCrew(response.data.pirate.mates);
         })
     }, []);
     
@@ -46,6 +48,13 @@ const SinglePirate = (props) => {
                     })
                 }
             </p>
+            <h3>Crew:</h3>
+            <ul>
+            {
+                    crew.map((item,i) => {return <span key={i}>{item}, </span>
+                    })
+                }
+            </ul>
             <p className='ship'></p>
             <p><strong>Treaseure: </strong>{pirate.treasure}</p>
             <p><strong>He's Recieved: </strong> {pirate.likes} five star reviews</p>

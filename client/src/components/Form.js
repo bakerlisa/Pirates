@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 const Form = props => {
     var errorSize = Object.keys(props.dbError).length;
+    const [crew,setCrew] = useState([props.mates])
     const [captain,setCaptain] = useState(false)
     const lengths = {
         name: 3,
@@ -11,7 +12,6 @@ const Form = props => {
 
     const onChangeHandler = (event) => {
         props.setForm({...props.form,[event.target.name]: event.target.value})
-        console.log(event.target.value.length)
         if(event.target.name in props.error){
             if(event.target.value.length >= lengths[event.target.name]){
                 props.setError({...props.error,[event.target.name]:true})
@@ -28,10 +28,7 @@ const Form = props => {
     }
 
     const onCheckboxHandler = (event)  => {
-        console.log(event.target.checked)
-
         props.setForm({...props.form, [event.target.name]: event.target.checked})
-
     }
 
     useEffect(() => {
@@ -44,9 +41,15 @@ const Form = props => {
     }, []);
     
     return(
-        <>
-            <h1>{props.title}</h1>
-            <form onSubmit={props.onSubmitHandler} >
+        <div class="formWrp">
+            <div className="imageWrap">
+                <img src={props.form.image} alt={props.form.name} />
+                <h3>Known Crew Mates:</h3>
+                <ul>
+                    <li>{props.form.mates}</li>
+                </ul>
+            </div>
+            <form className="" onSubmit={props.onSubmitHandler} >
                 <div className="errWrp">
                     {
                         errorSize > 1 ? <><h4>Entries Required: </h4> {Object.keys(props.dbError).join(', ')}</> : ""
@@ -93,6 +96,11 @@ const Form = props => {
                 </div>
 
                 <div>
+                    <label htmlFor="mates">Crew Mates: </label>
+                    <input type="text" name="mates" value={props.form.mates}  onChange={onChangeHandler} placeholder="Comma seperated list" onBlur={onFocusOutHandler}/>
+                </div> 
+
+                <div>
                     <label htmlFor="treasure">Treasure: </label>
                     <input min="0" type="number" name="treasure" value={props.form.treasure} onChange={onChangeHandler} placeholder="Treasure..." />
                 </div> 
@@ -128,7 +136,7 @@ const Form = props => {
                 }
 
             </form>
-        </>
+        </div>
     )
 }
 

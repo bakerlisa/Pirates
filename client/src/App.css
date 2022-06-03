@@ -65,6 +65,14 @@ form .submit:hover{cursor: pointer; opacity: .75;}
   input + span,textarea + span,select + span{display: block; max-height:0; height:100%; overflow: hidden; transition: all .2s ease-in;}
   input:focus + span,textarea:focus + span,select:focus + span{color:var(--red); max-height:50px; transition: all .2s ease-in;}
 
+.formWrp{display: flex;align-items: start;justify-content: start;flex-wrap: wrap; max-width: 1000px; margin: 0 auto;}
+.formWrp .imageWrap{width: 350px; padding-top: 25px;}
+.formWrp .imageWrap img{max-width: 100%;}
+.imageWrap h3{text-align-last: left; font-family: 'Source Sans Pro', sans-serif;}
+.imageWrap ul{margin: 0;padding:  0;}
+.imageWrap ul li{list-style-type: none; text-align: left; padding: 0; margin: 0; display: block;}
+.formWrp > form{width: calc(100% - 350px); padding-left: 25px;}
+
   /* Database Errors */
   .errWrp{ color:var(--red);}
   .errWrp h4{margin:0 ;}

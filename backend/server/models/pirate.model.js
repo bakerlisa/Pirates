@@ -57,6 +57,10 @@ const PirateSchema = new mongoose.Schema({
     likes:{
         type: Number,
         default: 0
+    },
+    mates:{
+        type:Array,
+        default: 0
     }
 },{timestamps:true});
 
