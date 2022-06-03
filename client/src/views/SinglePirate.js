@@ -19,7 +19,6 @@ const SinglePirate = (props) => {
     
     const coutUp = (itemToCount,count) =>{
         var counting = parseInt(count) + 1;
-        console.log(counting)
 
         setNewCount({
             [itemToCount]:  counting

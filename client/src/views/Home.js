@@ -20,9 +20,7 @@ const Home = (props) => {
     return(
         <>
             <div>
-                {
-                    loggedIn ? <h3>Welcome {loggedIn}</h3> : ""
-                }
+
                 <h1>Pirates</h1>
                 <Link to="/createPirate" className="button-lg">Add a Pirate</Link>
                 <div className="allPirates">

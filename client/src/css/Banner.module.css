@@ -1,0 +1,4 @@
+.banner{position: relative; top: 0;left: 0;     background-size: cover; background-position: center;}
+.banner:before{content:''; height:100%; width: 100%; background-color: rgba(0,0,0,.65); position: absolute; top: 0;left: 0;}
+.banner h1{margin:  auto; color:var(--white); position: relative; text-align: left; max-width:1200px; padding: 250px 50px 50px;}
+.banner h1 span{font-weight: 300;font-size: 25px; display: block; text-transform: uppercase; letter-spacing: 1px; position: relative; bottom: -12px;}

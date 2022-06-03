@@ -24,7 +24,6 @@ const AddPirate = (props) => {
                 history.push("/pirates"); 
             })
             .catch(err => {
-                console.log(err.response)
                 setDBError(err.response.data.error.errors)
             });
     }

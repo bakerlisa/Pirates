@@ -5,6 +5,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import Form from '../components/Form';
 import Delete from '../components/Delete';
 import { Link } from 'react-router-dom';
+import Banner from '../components/Banner'
 
 const EditPriate = (props) => {
     const history = useHistory();
@@ -41,6 +42,7 @@ const EditPriate = (props) => {
 
     return(
         <>
+        <Banner title={form.name} page="editbanner" member={form.crew}/>
             <div>
                 <Form  title={`Edit Pirate: ${form.name}`} form={form} setForm={setForm} onSubmitHandler={onSubmitHandler} dbError={dbError} error={error} setError={setError} />
                 <Link to="/pirates" className="cancle">Cancle</Link>

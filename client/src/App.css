@@ -37,7 +37,11 @@ p,li,a{font-family: 'Source Sans Pro', sans-serif;}
   /* EDIT */
   .edit{text-transform: uppercase; padding: 15px; font-size: 16px; display: block; text-decoration: none;font-weight: 600; letter-spacing: 1px; background-color:var(--md_blue); max-width: 200px; color:var(--white); margin: 0 auto; border: solid 2px var(--md_blue); transition: all .25s ease-out;}
   .edit:hover{transition: all .25s ease-out; background-color: transparent; color:var(--md_blue);}
-/* CONTAINER */
+
+  /* BANNER  */
+  .editbanner{background-image: url('./img/ship01.jpg');}
+
+  /* CONTAINER */
 .container{max-width: 1200px; margin: 0 auto;}
 
 /* FOOTER */
