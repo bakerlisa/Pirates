@@ -2,7 +2,8 @@
 .singlePirate h2{text-align: left; margin: 0;}
 .singlePirate  p{text-align: left; font-family: 'Source Sans Pro', sans-serif;}
 .singlePirate img{display: block;max-width: 100%;}
-.singlePirate .jollyroger{max-width: 100px; display: block; padding-top: 10px;}
+.singlePirate .jollyroger{max-width: 100px; display: flex; padding-top: 10px;}
+.singlePirate .jollyroger img{padding: 5px;}
 .about p{text-align: left;}
 
 

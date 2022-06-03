@@ -52,11 +52,11 @@ const SinglePirate = (props) => {
                         <h2> { pirate.crew === "captain" ?    "Captain" : `${ pirate.crew}`  } of the {pirate.ship}</h2>
                         <div className={styled.jollyroger}>
                             {
-                                pirate.jollyroger.length > 0 ? <img src={pirate.jollyroger}  alt={`${pirate.ship} Jolly Roger`} /> : ""
+                                pirate.jollyroger ? <img src={pirate.jollyroger}  alt={`${pirate.ship} Jolly Roger`} /> : ""
                             }
                             
                             {
-                                pirate.jollyrogertwo.length > 0 ? <img src={pirate.jollyrogertwo}  alt={`${pirate.ship} Jolly Roger`} /> : ""
+                                pirate.jollyrogertwo ? <img src={pirate.jollyrogertwo}  alt={`${pirate.ship} Jolly Roger`} /> : ""
                             }
                                 
                         </div>
