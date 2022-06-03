@@ -6,6 +6,10 @@ const PirateSchema = new mongoose.Schema({
         required: [true, "Name is required"],
         minlength: [3, "Name needs to be at least 3 characters"]
     },
+    about: {
+        type:String,
+        default: "There's no pirate like me"
+    },
     crew: {
         type: String,
         minlength: [3, "Crew needs to be at least 3 characters"],

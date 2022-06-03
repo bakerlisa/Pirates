@@ -68,6 +68,13 @@ const Form = props => {
                 </div>
 
                 <div>
+                    <label htmlFor="about">About: </label>
+                    <textarea type="text"  name="about"  onChange={onChangeHandler} value={props.form.about} >
+
+                    </textarea>
+                </div>
+
+                <div>
                     <label htmlFor="crew">Crew Position: </label>
                     <select defaultValue="empty" name="crew" value={props.form.crew} onChange={onChangeHandler}>
                         <option value="empty" disabled>Select Position</option>
