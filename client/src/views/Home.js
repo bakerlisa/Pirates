@@ -5,7 +5,6 @@ import Pirate from '../components/Pirate';
 
 const Home = (props) => {
     const [pirates,setPirates] = useState([])
-    const loggedIn = localStorage.getItem('name');
     
     const _ = require("lodash"); 
     let gfg = _.sortBy(pirates, ['_v:', 'name']);

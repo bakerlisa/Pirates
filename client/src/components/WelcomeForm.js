@@ -23,39 +23,38 @@ const WelcomeForm = props => {
     }
 
     function ValidateEmail(event) {
-        setLogin({...login,[event.target.name]:event.target.value})
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(event.target.value)){
-            setError({...error, email: true})
-        }else{
-            setError({...error, email: false})
-        }
+        // setLogin({...login,[event.target.name]:event.target.value})
+        // if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(event.target.value)){
+        //     setError({...error, email: true})
+        // }else{
+        //     setError({...error, email: false})
+        // }
     }
 
     const onChangeHandler = (event) => {
 
-        setLogin({...login,[event.target.name]: event.target.value})
-        console.log(event.target.value.length)
-        if(event.target.name in error){
-            if(event.target.value.length >= lengths[event.target.name]){
-                setError({...error,[event.target.name]:true})
-            }else{
-                setError({...error,[event.target.name]:false})
-            }
-        }
+        // setLogin({...login,[event.target.name]: event.target.value})
+        // if(event.target.name in error){
+        //     if(event.target.value.length >= lengths[event.target.name]){
+        //         setError({...error,[event.target.name]:true})
+        //     }else{
+        //         setError({...error,[event.target.name]:false})
+        //     }
+        // }
     }
     
     const onSubmitHandler = (event) =>{
         event.preventDefault();
 
-        axios.get(`http://localhost:8000/api/login`,login).then(response=>{
-            // localStorage.setItem('name', login.firstName);
-            // history.push("/pirates"); 
-            console.log(response.data)
-        })
-        .catch(err => {
-            console.log(err.response)
-            setDBError(err.response.data.error.errors)
-        });
+        // axios.get(`http://localhost:8000/api/login`,login).then(response=>{
+        //     // localStorage.setItem('name', login.firstName);
+        //     // history.push("/pirates"); 
+        //     console.log(response.data)
+        // })
+        // .catch(err => {
+        //     console.log(err.response)
+        //     setDBError(err.response.data.error.errors)
+        // });
     }
 
     return(
