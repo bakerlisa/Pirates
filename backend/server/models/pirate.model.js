@@ -54,6 +54,14 @@ const PirateSchema = new mongoose.Schema({
         type: Boolean,
         default:false
     },
+    featureRum:{
+        type: Boolean,
+        default:false
+    },
+    featureTreasure:{
+        type: Boolean,
+        default:false
+    },
     likes:{
         type: Number,
         default: 0

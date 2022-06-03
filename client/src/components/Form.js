@@ -46,10 +46,7 @@ const Form = props => {
         <div class="formWrp">
             <div className="imageWrap">
                 <img src={props.form.image} alt={props.form.name} />
-                <h3>Known Crew Mates:</h3>
-                <ul>
-                    <li>{props.form.mates}</li>
-                </ul>
+                <p>"{props.form.phrase}"</p>
                 <div className="buttonWrp">
                     <Link to="/pirates" className="cancle">Cancle</Link>
                     <Delete id={props.form.id} />
@@ -115,27 +112,44 @@ const Form = props => {
                     <label htmlFor="attributes">Attributes: </label>
                     <input type="text" name="attributes" value={props.form.attributes}  onChange={onChangeHandler} placeholder="Comma seperated list" onBlur={onFocusOutHandler}/>
                 </div> 
+                <h3>Typical Pirate Traits:</h3>
+                <div className="typical"> 
+                    <div>
+                        { 
+                            props.form.featurePegleg === true ?  <input type="checkbox" checked  name="featurePegleg" onChange={onCheckboxHandler}/> : <input type="checkbox"  name="featurePegleg" onChange={onCheckboxHandler}/>
+                        }
+                        <label htmlFor="featurePegleg">Peg Leg</label>
+                    </div>
 
-                <div>
-                    <label htmlFor="featurePegleg">Peg Leg</label>
-                    { 
-                        props.form.featurePegleg === true ?  <input type="checkbox" checked  name="featurePegleg" onChange={onCheckboxHandler}/> : <input type="checkbox"  name="featurePegleg" onChange={onCheckboxHandler}/>
-                    }
-                </div>
+                    <div>
+                        { 
+                            props.form.featurePatch === true ?  <input type="checkbox" checked  name="featurePatch" onChange={onCheckboxHandler}/> : <input type="checkbox"  name="featurePatch" onChange={onCheckboxHandler}/>
+                        }
+                        <label htmlFor="featurePatch">Eye patch</label>
+                    </div>
 
-                <div>
-                    <label htmlFor="featurePatch">Eye patch</label>
-                    { 
-                        props.form.featurePatch === true ?  <input type="checkbox" checked  name="featurePatch" onChange={onCheckboxHandler}/> : <input type="checkbox"  name="featurePatch" onChange={onCheckboxHandler}/>
-                    }
-                </div>
+                    <div>
+                        { 
+                            props.form.featureHook === true ?  <input type="checkbox" checked  name="featureHook" onChange={onCheckboxHandler}/> : <input type="checkbox"  name="featureHook" onChange={onCheckboxHandler}/>
+                        }
+                        <label htmlFor="featureHook">Hook</label>
+                    </div>
 
-                <div>
-                    <label htmlFor="featureHook">Hook</label>
-                    { 
-                        props.form.featureHook === true ?  <input type="checkbox" checked  name="featureHook" onChange={onCheckboxHandler}/> : <input type="checkbox"  name="featureHook" onChange={onCheckboxHandler}/>
-                    }
+                    <div>
+                        { 
+                            props.form.featureRum === true ?  <input type="checkbox" checked  name="featureRum" onChange={onCheckboxHandler}/> : <input type="checkbox"  name="featureRum" onChange={onCheckboxHandler}/>
+                        }
+                        <label htmlFor="featureRum">Loves Rum:</label>
+                    </div>
+
+                    <div>
+                        { 
+                            props.form.featureTreasure === true ?  <input type="checkbox" checked  name="featureTreasure" onChange={onCheckboxHandler}/> : <input type="checkbox"  name="featureTreasure" onChange={onCheckboxHandler}/>
+                        }
+                        <label htmlFor="featureTreasure">Loves Treasure:</label>
+                    </div>
                 </div>
+                
                 
                 {
                     Object.keys(props.error).every((item) => props.error[item]) ? <input type="submit" value="Create" className="submit" /> : <input type="submit" value="Create" disabled className="disabled" />

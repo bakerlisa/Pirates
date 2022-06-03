@@ -60,6 +60,11 @@ form input,form select{width: 100%; padding: 10px; margin-top: 5px; border:none;
     -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1) inset;}
 form .checkbox{display: flex;align-items: center;justify-content: start;flex-wrap: wrap; margin: 20px 0;}
 form .checkbox input{width: 25px;margin: 0; height: 18px; width: 18px; margin-left: 15px;}
+    form h3{text-align: left;}
+    form .typical{display: flex; align-items: start; justify-content: start;flex-wrap: wrap;}
+    form .typical input{width: 25px;}
+    form .typical label{width: calc(100% - 25px);}
+    form .typical > div{width: 33.33%; display: flex; margin-bottom: 10px;}
 form .submit{background-color:var(--green); color:var(--white); text-transform: uppercase; font-weight: 400; letter-spacing: 1px; border: none;; padding: 15px;}
 form .submit:hover{cursor: pointer; opacity: .75;}
   input .disabled{background-color:var(--red); opacity: 0.25;}

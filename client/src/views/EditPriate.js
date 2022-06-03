@@ -44,7 +44,6 @@ const EditPriate = (props) => {
         <>
             <Banner title={form.name} page="editbanner" member={form.crew} subtitle="Edit" />
             <div>
-
                 <Form  title={`Edit Pirate: ${form.name}`} form={form} setForm={setForm} onSubmitHandler={onSubmitHandler} dbError={dbError} error={error} setError={setError} mates={mates}/>
             </div>
         </>
