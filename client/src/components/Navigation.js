@@ -6,6 +6,7 @@ const Navigation = () => {
         <nav>
             <Link to="/pirates">Home</Link>
             <Link to="/createPirate">Create </Link>
+            <Link to="/resources">Resources </Link>
         </nav>
     )
 }

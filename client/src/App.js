@@ -8,6 +8,7 @@ import Error from './views/Error';
 import Home from './views/Home';
 import Login from './views/Login';
 import SinglePirate from './views/SinglePirate';
+import Resources from './views/Resources.js'
 
 function App() {
 
@@ -42,6 +43,10 @@ function App() {
         <Navigation />
           <EditPriate />
           <Footer />
+        </Route>
+
+        <Route exact path="/resources">
+
         </Route>
 
         {/* ERROR/404 routes */}
