@@ -1,6 +1,6 @@
 # Pirates
 
-Ok people this started as seeing what I could do in 5 hours. But since I LOVE histroy and pirates are fasinating I kept going with it.
+Ok people this started as seeing what I could do in 5 hours. But since I LOVE histroy and pirates I kept going.
 
 The orginal 5 hours was an amazing amount of work! I can't belive how much I got done, but now, its truning into soemthing awesome! Worthy of the pirates we love
 
