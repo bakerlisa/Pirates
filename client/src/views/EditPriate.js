@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 
 import Form from '../components/Form';
-import Delete from '../components/Delete';
-import { Link } from 'react-router-dom';
 import Banner from '../components/Banner'
 
 const EditPriate = (props) => {
@@ -48,8 +46,6 @@ const EditPriate = (props) => {
             <div>
 
                 <Form  title={`Edit Pirate: ${form.name}`} form={form} setForm={setForm} onSubmitHandler={onSubmitHandler} dbError={dbError} error={error} setError={setError} mates={mates}/>
-                <Link to="/pirates" className="cancle">Cancle</Link>
-                <Delete id={id} />
             </div>
         </>
     )

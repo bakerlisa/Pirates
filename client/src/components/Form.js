@@ -1,5 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import Delete from '../components/Delete';
+import { Link } from 'react-router-dom';
 
 const Form = props => {
     var errorSize = Object.keys(props.dbError).length;
@@ -48,6 +50,10 @@ const Form = props => {
                 <ul>
                     <li>{props.form.mates}</li>
                 </ul>
+                <div className="buttonWrp">
+                    <Link to="/pirates" className="cancle">Cancle</Link>
+                    <Delete id={props.form.id} />
+                </div>
             </div>
             <form className="" onSubmit={props.onSubmitHandler} >
                 <div className="errWrp">

@@ -48,12 +48,13 @@ const SinglePirate = (props) => {
                     })
                 }
             </p>
-            <h3>Crew:</h3>
+            <h3>Current Crew:</h3>
             <ul>
             {
-                    crew.map((item,i) => {return <span key={i}>{item}, </span>
-                    })
-                }
+                crew.map((item,i) => {
+                    return <li key={i}>{item} </li>
+                })
+            }
             </ul>
             <p className='ship'></p>
             <p><strong>Treaseure: </strong>{pirate.treasure}</p>

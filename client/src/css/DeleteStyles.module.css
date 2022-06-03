@@ -1,2 +1,2 @@
-.delete{margin-top: 25px; color:var(--red); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;}
-    .delete:hover{cursor: pointer; color:var(--black);}
+.delete{margin:0px; color:var(--red); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-family: 'Source Sans Pro', sans-serif; padding: 14px 25px; width: 50%;}
+    .delete:hover{cursor: pointer; background-color:var(--red); color:var(--white);}
