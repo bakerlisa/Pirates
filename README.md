@@ -8,5 +8,6 @@ Top Accomplishments:
 1. Database creation, ERD, and setup
 2. 
 
+![](https://github.com/lisabroadhead/Pirates/blob/main/Screen%20Shot%202022-06-03%20at%2012.33.43%20PM.png) 
 
-*** Pictures are coming! ****
+*** MORE Pictures are coming! ****
