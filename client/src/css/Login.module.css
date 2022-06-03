@@ -1,0 +1,6 @@
+nav{    display: none;}
+.banner{background-image: url('../img/ship.jpg'); height: 100vh;}
+.banner .txtWrp{position: relative; top:50%; transform: translateY(-50%);}
+.banner h1{margin: 0;  font-size: 100px; letter-spacing: 5px;}
+.banner .button{display: block; text-transform: uppercase; color:var(--black); text-decoration: none; font-size: 20px; border: solid 2px black; max-width: 250px; text-align: center; padding: 15px 10px; margin:15px auto 0 auto; transition: all .25s ease-in;}
+.banner .button:hover{border-color:transparent; border-bottom:  solid 2px black; transition: all .25s ease-in;}

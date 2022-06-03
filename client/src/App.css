@@ -2,7 +2,7 @@
 GLOBAL STYLES 
 ======================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Source+Sans+Pro:wght@200;300;400&display=swap');
 
 :root{
   --white:#fff;
@@ -21,7 +21,8 @@ GLOBAL STYLES
 
 h1{font-size: 65px;}
 
-*{box-sizing: border-box; font-family: 'Fira Sans', sans-serif;}
+*{box-sizing: border-box; font-family: 'Nuosu SIL', serif;}
+p,li,a{font-family: 'Source Sans Pro', sans-serif;}
 
 .App {text-align: center;}
 
@@ -62,11 +63,6 @@ form .submit:hover{cursor: pointer; opacity: .75;}
   .errWrp{ color:var(--red);}
   .errWrp h4{margin:0 ;}
 /* NAV */
-nav{text-align: right; padding: 25px 50px; background-color:var(--black); border-bottom: solid 1px var(--pink);}
-nav a,nav > div{color:var(--pink); padding: 0 10px; text-decoration: none; font-weight: 600; display: inline;}
+nav{text-align: right; padding: 25px 50px; background-color:transparent; position: absolute; top: 0; left: 0;width: 100%;}
+nav a,nav > div{color:var(--white); padding: 0 10px; text-decoration: none; font-weight: 600; display: inline;}
 nav a:hover, nav > div:hover{cursor: pointer; color:var(--white);}
-
-/* NAV */
-nav{text-align: right; padding: 25px 50px; background-color:var(--black); border-bottom: solid 1px var(--white);}
-nav a{color:var(--white); padding: 0 10px; text-decoration: none; font-weight: 600;}
-nav a:hover{color:var(--white);}
