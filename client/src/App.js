@@ -30,6 +30,7 @@ function App() {
         </Route>
 
         <Route exact path="/createPirate">
+          <Navigation />
           <AddPirate />
         </Route>
 
@@ -40,13 +41,15 @@ function App() {
         </Route>
 
         <Route exact path="/editPirate/:id">
-        <Navigation />
+          <Navigation />
           <EditPriate />
           <Footer />
         </Route>
 
         <Route exact path="/resources">
-
+          <Navigation />
+          <Resources />
+          <Footer />
         </Route>
 
         {/* ERROR/404 routes */}

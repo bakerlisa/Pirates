@@ -42,10 +42,16 @@ p,li,a{font-family: 'Source Sans Pro', sans-serif;}
   /* BANNER  */
   .editbanner{background-image: url('./img/ship01.jpg');}
   .homebanner{background-image: url('./img/pirates.jpg');}
-  .homebanner:before{background-color: rgba(0,0,0,.25) !important;}
+  .singlepirate{background-image: url('./img/mermaid.jpg');}
+  .homebanner:before, .singlepirate:before{background-color: rgba(0,0,0,.25) !important;}
 
   /* CONTAINER */
-.container{max-width: 1200px; margin: 0 auto;}
+.container{max-width: 1200px; margin: 0 auto; padding: 50px;}
+
+/* COLUMN */
+.col-2{width: 50%;}
+.col-2:nth-child(even){padding-left: 25px;}
+.col-2:nth-child(odd){padding-right: 25px;}
 
 /* FOOTER */
 footer{background-color:var(--black); padding: 50px; color:var(--whtie);}

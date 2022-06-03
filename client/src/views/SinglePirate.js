@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Delete from '../components/Delete';
 import styled from '../css/SinglePirate.module.css'
+import Banner from '../components/Banner'
 
 const SinglePirate = (props) => {
     const { id } = useParams();
@@ -37,46 +38,58 @@ const SinglePirate = (props) => {
     }
 
     return(
-        <div className={styled.singlePirate}>
-            <h1> { pirate.crew === "Captain" ?    "Captain" : "" } {pirate.name} </h1>
-            <h3>"{pirate.phrase}"</h3>
-            <img src={pirate.image} alt="" />
-            <div className="ship">{ pirate.crew} of the {pirate.ship} </div>
-            <p><strong>You'll know him by: </strong> 
-                {
-                    attr.map((item,i) => {return <span key={i}>{item}, </span>
-                    })
-                }
-            </p>
-            <h3>Current Crew:</h3>
-            <ul>
-            {
-                crew.map((item,i) => {
-                    return <li key={i}>{item} </li>
-                })
-            }
-            </ul>
-            <p className='ship'></p>
-            <p><strong>Treaseure: </strong>{pirate.treasure}</p>
-            <p><strong>He's Recieved: </strong> {pirate.likes} five star reviews</p>
+        <>
+            <Banner page="singlepirate" subtitle={`Aboard the ${pirate.ship}`} title={`${pirate.name}`} />
+            <div className="container">
+                <div className={styled.singlePirate}>
+                    <div className="col-2">
+                        <img src={pirate.image} alt={pirate.name} />
+                        <h3>"{pirate.phrase}"</h3>
+                    </div>
 
-            <div className={styled.halloweenVote}>
-                <h2>Halloweed Dressup Vote:</h2>
-                <p>For halloween {pirate.name} should wear (click to vote): </p>
+                    <div className="col-2">
+                        <h2> { pirate.crew === "captain" ?    "Captain" : `${ pirate.crew}`  } of the {pirate.ship}</h2>
+                        <p class={styled.favorite}><strong>Vote as Your Favorite Pirate: </strong> {pirate.likes} </p>
+                    
+                        <p><strong>You'll know him by: </strong></p>
+                        <p>
+                            {
+                                attr.map((item,i) => {return <span key={i}>{item}, </span>
+                                })
+                            }
+                        </p>
+                    </div>
+                </div>
 
-                <p className={styled.vote} onClick={() => coutUp("eyePatch",pirate.eyePatch) }>Eye Patch: <strong>{pirate.eyePatch}</strong></p>
-                <p className={styled.vote}  onClick={() => coutUp("pegLeg",pirate.pegLeg) }>Peg Leg: <strong>{pirate.pegLeg}</strong></p>
-                <p className={styled.vote}  onClick={() => coutUp("hook",pirate.hook) }>Hook: <strong>{pirate.hook}</strong></p>
+                <div className="aboutWrp">
+                    {pirate.about}
+                </div>
+
+                <div className="crewWrp">
+                    <h3>Crew:</h3>
+                        <ul>
+                        {
+                            crew.map((item,i) => {
+                                return <li key={i}>{item} </li>
+                            })
+                        }
+                        </ul>
+                </div>
+
+                <div className="piratingStats">
+                    <p><strong>Treaseure: </strong>{pirate.treasure}</p>
+                </div>
+
+                <div className="questionAnswer">
+                    <h3>Q&A:</h3>
+                    <p>Does he have an eye patch: {pirate.featurePatch === true ? "Yes!" : "No"} </p>
+                    <p>Does he have a peg leg: {pirate.featurePegleg === true ? "Yes!" : "No"} </p>
+                    <p>Does he have a hook: {pirate.featureHook === true ? "Yes!" : "No"} </p>
+                </div>
+
+                <Link className="edit" to={`/editPirate/${id}`}>Edit</Link>
             </div>
-
-            <h3>Q&A:</h3>
-            <p>Does he have an eye patch: {pirate.featurePatch === true ? "Yes!" : "No"} </p>
-            <p>Does he have a peg leg: {pirate.featurePegleg === true ? "Yes!" : "No"} </p>
-            <p>Does he have a hook: {pirate.featureHook === true ? "Yes!" : "No"} </p>
-
-            <Link className="edit" to={`/editPirate/${id}`}>Edit</Link>
-            <Delete id={id} />
-        </div>
+        </>
     )
 }
 
