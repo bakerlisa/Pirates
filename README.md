@@ -11,7 +11,7 @@ Top Accomplishments:
 2. 
 
 ![](https://github.com/lisabroadhead/Pirates/blob/main/Screen%20Shot%202022-06-03%20at%2012.33.43%20PM.png) 
-![](https://github.com/lisabroadhead/Pirates/blob/main/Screen%20Shot%202022-06-03%20at%204.22.15%20PM.png) 
+![](https://github.com/lisabroadhead/Pirates/blob/main/Screen%20Shot%202022-06-03%20at%204.33.45%20PM.png) 
 
 
 
