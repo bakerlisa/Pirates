@@ -23,7 +23,9 @@ GLOBAL STYLES
 h1{font-size: 65px;}
 
 *{box-sizing: border-box; font-family: 'Nuosu SIL', serif;}
-p,li,a{font-family: 'Source Sans Pro', sans-serif;}
+p,li,a{font-family: 'Source Sans Pro', sans-serif; text-align: left;}
+
+h2{font-size: 50px; text-align: left;}
 
 .App {text-align: center;}
 

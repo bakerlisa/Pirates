@@ -96,8 +96,18 @@ const Form = props => {
                 </div>
 
                 <div>
-                    <label htmlFor="ship">Aboard Ship: </label>
+                    <label htmlFor="ship">Flag Ship: </label>
                     <input type="text"  name="ship" value={props.form.ship} placeholder="Ship Name..." onChange={onChangeHandler} />
+                </div>
+
+                <div>
+                    <label htmlFor="othership">Other Ship: </label>
+                    <input type="text"  name="othership" value={props.form.othership} placeholder="Other Ships Name..." onChange={onChangeHandler} />
+                </div>
+
+                <div>
+                    <label htmlFor="shipImage">Ship Image: </label>
+                    <input type="text"  name="shipImage" value={props.form.shipImage} placeholder="Link to Ships Image..." onChange={onChangeHandler} />
                 </div>
 
                 <div>

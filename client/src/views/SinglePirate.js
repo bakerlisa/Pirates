@@ -44,13 +44,13 @@ const SinglePirate = (props) => {
                 <div className={styled.singlePirate}>
                     <div className="col-2">
                         <img src={pirate.image} alt={pirate.name} />
-                        <h3>"{pirate.phrase}"</h3>
+                        <h3 class={styled.phrase}>"{pirate.phrase}"</h3>
                     </div>
 
                     <div className="col-2">
                         <h2> { pirate.crew === "captain" ?    "Captain" : `${ pirate.crew}`  } of the {pirate.ship}</h2>
                         <p class={styled.favorite}><strong>Vote as Your Favorite Pirate: </strong> {pirate.likes} </p>
-                    
+                        <p><strong>Ships Taken: </strong>{pirate.treasure}</p>
                         <p><strong>You'll know him by: </strong></p>
                         <p>
                             {
@@ -62,11 +62,15 @@ const SinglePirate = (props) => {
                 </div>
 
                 <div className="aboutWrp">
-                    {pirate.about}
+                    <h2>About</h2>
+                    <p>{pirate.about}</p>
                 </div>
 
-                <div className="crewWrp">
-                    <h3>Crew:</h3>
+                <div className={styled.crewWrp}>
+                    <h2>Known Crew:</h2>
+                        <div className={styled.imageWrap}>
+                            <img src={pirate.shipImage} alt={`Image of the ${pirate.ship}`} />
+                        </div>
                         <ul>
                         {
                             crew.map((item,i) => {
@@ -74,17 +78,6 @@ const SinglePirate = (props) => {
                             })
                         }
                         </ul>
-                </div>
-
-                <div className="piratingStats">
-                    <p><strong>Treaseure: </strong>{pirate.treasure}</p>
-                </div>
-
-                <div className="questionAnswer">
-                    <h3>Q&A:</h3>
-                    <p>Does he have an eye patch: {pirate.featurePatch === true ? "Yes!" : "No"} </p>
-                    <p>Does he have a peg leg: {pirate.featurePegleg === true ? "Yes!" : "No"} </p>
-                    <p>Does he have a hook: {pirate.featureHook === true ? "Yes!" : "No"} </p>
                 </div>
 
                 <Link className="edit" to={`/editPirate/${id}`}>Edit</Link>

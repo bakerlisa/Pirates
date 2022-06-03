@@ -1,8 +1,16 @@
 .singlePirate{padding-bottom: 50px; display: flex;align-items: start;justify-content: start;flex-wrap: wrap;}
-.singlePirate h2{text-align: left; font-size: 50px; margin: 0;}
+.singlePirate h2{text-align: left; margin: 0;}
 .singlePirate  p{text-align: left; font-family: 'Source Sans Pro', sans-serif;}
 .singlePirate img{display: block;max-width: 100%;}
+.about p{text-align: left;}
 
-
+/* crewWrp */
+.crewWrp{display: flex;align-items: start;justify-content: start;flex-wrap: wrap;}
+.crewWrp h2{width: 100%;}
+.crewWrp .imageWrap{width: 50%; padding-right: 25px;}
+.crewWrp .imageWrap img{display: block;max-width: 100%;}
+.crewWrp ul{width: 50%; padding-left: 25px;}
 .vote strong{color:var(--green);}
 .vote:hover{cursor: pointer; color:var(--dk_gray);}
+
+

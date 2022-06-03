@@ -19,6 +19,14 @@ const PirateSchema = new mongoose.Schema({
         type: String,
         default: "HA! Scooner"
     },
+    othership:{
+        type: String,
+        default: "Wouldn't you want to know!"
+    },
+    shipImage:{
+        type: String,
+        default: 0
+    },
     phrase: {
         type: String,
         default: "I like rum!"
