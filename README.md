@@ -1,8 +1,13 @@
 # Pirates
 
-Ok people this started as seeing what I could do in 5 hours. But since I LOVE histroy and pirates I kept going.
+Technologies:
+React, Expres, Monogo/MonGoose, HTML, CSS, JS
 
-The orginal 5 hours was an amazing amount of work! I can't belive how much I got done, but now, its truning into soemthing awesome! Worthy of the pirates we love
+Other tools:
+Postman, terminal
+
+I LOVE histroy and pirates, this started out as small project and now I can't stop!
+
 
 *** MORE Pictures are coming! Styles are still a work in progress ****
 
