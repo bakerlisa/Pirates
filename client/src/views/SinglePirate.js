@@ -6,6 +6,7 @@ import styled from '../css/SinglePirate.module.css'
 import Banner from '../components/Banner'
 
 const SinglePirate = (props) => {
+    const user = localStorage.getItem();
     const { id } = useParams();
     const [pirate,setPirate] = useState([])
     const [newCount, setNewCount] = useState({})
