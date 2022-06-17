@@ -101,7 +101,20 @@ form .submit:hover{cursor: pointer; opacity: .75;}
   /* Database Errors */
   .errWrp{ color:var(--red);}
   .errWrp h4{margin:0 ;}
-/* NAV */
+
+  /* NAV */
 nav{text-align: right; padding: 25px 50px; background-color:transparent; position: absolute; top: 0; left: 0;width: 100%; z-index: 100;}
 nav a,nav > div{color:var(--white); padding: 0 10px; text-decoration: none; font-weight: 600; display: inline;}
 nav a:hover, nav > div:hover{cursor: pointer; color:var(--white);}
+
+/* Popup */
+.popwarp{position: fixed; top: 50%; left: 0;right: 0;margin: 0 auto; background-color: var(--black); color:var(--white); z-index: 100; max-width: 600px; padding: 25px; transform-origin: center;}
+  .inactive{transform: scale(0) translateY(-50%); z-index: -1;}
+  .active{transform: scale(1) translateY(-50%); z-index: 100;}
+.popwarp h3{text-transform: uppercase; letter-spacing: 1px;}
+.popwarp .submit{background-color:var(--md_blue);text-transform: uppercase; letter-spacing: 1px; color:var(--white);}
+.popwarp p{text-align: center;}
+
+/* exit */
+.exit{position: absolute; top: -50px;right: 0px; font-weight: 900; font-size: 25px; color: var(--white); padding: 10px;  transition: all .25s ease-in;}
+    .exit:hover{cursor: pointer; color:var(--md_blue); transition: all .25s ease-in;}

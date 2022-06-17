@@ -1,9 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import Delete from '../components/Delete';
 import styled from '../css/SinglePirate.module.css'
 import Banner from '../components/Banner'
+
 
 const SinglePirate = (props) => {
     const { id } = useParams();
@@ -11,6 +11,7 @@ const SinglePirate = (props) => {
     const [newCount, setNewCount] = useState({})
     const [crew,setCrew] = useState([props.mates])
     const [attr,setAttr] = useState([])
+    const logged = sessionStorage.getItem("loggedin");
     
     useEffect(() => {
         axios.get(`http://localhost:8000/api/pirate/${id}`).then(response=>{
@@ -90,7 +91,9 @@ const SinglePirate = (props) => {
                             })
                         }
                         </ul>
-                        <Link className={styled.edit} to={`/editPirate/${id}`}>Edit</Link>
+                        {
+                            logged === "true" ? <Link className={styled.edit} to={`/editPirate/${id}`}>Edit</Link> : ""
+                        }
                 </div>
             </div>
         </>

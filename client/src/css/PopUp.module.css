@@ -1,7 +1,0 @@
-.popwarp{position: fixed; top: 50%; transform: translateY(-50%); left: 0;right: 0;margin: 0 auto; background-color: var(--black); color:var(--white); z-index: 100; max-width: 600px; padding: 25px; transform-origin: center;}
-.popwarp h3{text-transform: uppercase; letter-spacing: 1px;}
-.submit{background-color:var(--md_blue);text-transform: uppercase; letter-spacing: 1px; color:var(--white);}
-
-/* exit */
-.exit{position: absolute; top: -50px;right: 0px; font-weight: 900; font-size: 25px; color: var(--white); padding: 10px;  transition: all .25s ease-in;}
-    .exit:hover{cursor: pointer; color:var(--md_blue); transition: all .25s ease-in;}
