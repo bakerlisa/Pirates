@@ -114,6 +114,9 @@ const Form = props => {
                     <label htmlFor="jollyroger">Jolly Roger: </label>
                     <input type="text"  name="jollyroger" value={props.form.jollyroger} placeholder="Ships Jolly Roger..." onChange={onChangeHandler} />
                     <input type="text"  name="jollyrogertwo" value={props.form.jollyrogertwo} placeholder="Second Jolly Roger..." onChange={onChangeHandler} />
+                    <input type="text"  name="jollyrogerthree" value={props.form.jollyrogerthree} placeholder="Third Jolly Roger..." onChange={onChangeHandler} />
+                    <input type="text"  name="jollyrogerfour" value={props.form.jollyrogerfour} placeholder="Fourth Jolly Roger..." onChange={onChangeHandler} />
+                    <input type="text"  name="jollyrogerfive" value={props.form.jollyrogerfive} placeholder="Fifth Jolly Roger..." onChange={onChangeHandler} />
                 </div>
 
                 <div>

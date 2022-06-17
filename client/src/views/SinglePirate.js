@@ -58,6 +58,18 @@ const SinglePirate = (props) => {
                             
                             {
                                 pirate.jollyrogertwo ? <img src={pirate.jollyrogertwo}  alt={`${pirate.ship} Jolly Roger`} /> : ""
+                            }       
+
+                            {
+                                pirate.jollyrogerthree ? <img src={pirate.jollyrogerthree}  alt={`${pirate.ship} Jolly Roger`} /> : ""
+                            }
+
+                            {
+                                pirate.jollyrogerfour ? <img src={pirate.jollyrogerfour}  alt={`${pirate.ship} Jolly Roger`} /> : ""
+                            }
+
+                            {
+                                pirate.jollyrogerfive ? <img src={pirate.jollyrogerfive}  alt={`${pirate.ship} Jolly Roger`} /> : ""
                             }
                                 
                         </div>
