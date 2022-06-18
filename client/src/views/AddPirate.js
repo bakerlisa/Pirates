@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useHistory,Link } from 'react-router-dom';
 
 import Form from '../components/Form';
+import Banner from '../components/Banner';
 
 
 
@@ -29,10 +30,14 @@ const AddPirate = (props) => {
     }
 
     return(
-        <div>
-            <Form  title="Add Pirate" form={form} setForm={setForm}  onSubmitHandler={onSubmitHandler} dbError={dbError} error={error} setError={setError} />
-            <Link to="/pirates" className="cancle">Cancle</Link>
-        </div>
+        <>
+            <Banner page="createpirate"  title="Add a Pirate" />
+    
+            <div>
+                <Form  title="Add Pirate" form={form} setForm={setForm}  onSubmitHandler={onSubmitHandler} dbError={dbError} error={error} setError={setError} />
+                <Link to="/pirates" className="cancle">Cancle</Link>
+            </div>
+        </>
     )
 }
 

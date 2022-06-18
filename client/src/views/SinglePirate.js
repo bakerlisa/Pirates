@@ -41,6 +41,7 @@ const SinglePirate = (props) => {
     return(
         <>
             <Banner page="singlepirate" subtitle={`Aboard the ${pirate.ship}`} title={`${pirate.name}`} />
+            
             <div className="texture"></div>
             <div className="container">
                 <div className={styled.singlePirate}>
