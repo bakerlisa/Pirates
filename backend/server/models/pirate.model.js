@@ -28,13 +28,25 @@ const PirateSchema = new mongoose.Schema({
     },
     shipImage:{
         type: String,
-        default: 0
+        default: ""
     },
     jollyroger:{
         type: String,
         default: ""
     },
     jollyrogertwo:{
+        type: String,
+        default: ""
+    },
+    jollyrogerthree:{
+        type: String,
+        default: ""
+    },
+    jollyrogerfour:{
+        type: String,
+        default: ""
+    },
+    jollyrogerfive:{
         type: String,
         default: ""
     },
