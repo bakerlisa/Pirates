@@ -4,7 +4,7 @@ import Banner from '../components/Banner';
 const Resources = () => {
     return (
         <>
-            <Banner page="Resourcespirate"  title="Add a Pirate" />
+            <Banner page="Resourcespirate"  title="Pirate Resources" />
 
             <div className="resources">
 

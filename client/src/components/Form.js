@@ -143,6 +143,7 @@ const Form = props => {
                     <label htmlFor="more">Read More: </label>
                     <input type="text" name="more" value={props.form.more}  onChange={onChangeHandler} placeholder="More About..." />
                 </div>
+                
                 <h3>Typical Pirate Traits:</h3>
                 <div className="typical"> 
                     <div>
