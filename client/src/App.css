@@ -48,11 +48,12 @@ h3{font-family: 'Nuosu SIL', serif;}
   .homebanner{background-image: url('./img/pirates.jpg');}
   .singlepirate{background-image: url('./img/mermaid.jpg');}
   .createpirate{background-image: url('./img/ship01.jpg');}
+  .Resourcespirate{background-image: url('./img/ship01.jpg');}
   .homebanner:before, .singlepirate:before{background-color: rgba(0,0,0,.25) !important;}
 
   /* CONTAINER */
   .App{position: relative;}
-.container{max-width: 1200px; margin: 0 auto; padding: 50px; position: relative;}
+  .container{max-width: 1200px; margin: 0 auto; padding: 50px; position: relative;}
 
 .texture{background-image: url('./img/lines.png'); background-size: cover; background-repeat: no-repeat; background-position: bottom; position: absolute; bottom: 0;left: 0;right: 0;height: 1200px; width: 100%; opacity: .07;}
 

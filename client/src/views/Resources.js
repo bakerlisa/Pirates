@@ -1,10 +1,15 @@
 import React from 'react'
+import Banner from '../components/Banner';
 
 const Resources = () => {
     return (
-        <div className="resources">
+        <>
+            <Banner page="Resourcespirate"  title="Add a Pirate" />
 
-        </div>
+            <div className="resources">
+
+            </div>
+        </>
     )
 }
 

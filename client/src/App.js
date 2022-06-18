@@ -34,6 +34,7 @@ function App() {
         <Route exact path="/createPirate">
           <Navigation />
           <AddPirate/>
+          <Footer />
         </Route>
 
         <Route exact path="/pirate/:id">

@@ -35,7 +35,7 @@ const AddPirate = (props) => {
     
             <div>
                 <Form  title="Add Pirate" form={form} setForm={setForm}  onSubmitHandler={onSubmitHandler} dbError={dbError} error={error} setError={setError} />
-                <Link to="/pirates" className="cancle">Cancle</Link>
+
             </div>
         </>
     )
